@@ -49,7 +49,7 @@ async def quote_himiki(member: discord.Member):
     global config
     global client
 
-    if member is None or member.activity is None or member.guild.id != config['quotes_id']:
+    if member is None or member.activity is None or member.guild.id != config['guild_id']:
         return
 
     channel = client.get_channel(id=config['quotes_id'])
